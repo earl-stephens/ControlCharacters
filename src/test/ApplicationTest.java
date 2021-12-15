@@ -25,9 +25,16 @@ public class ApplicationTest {
 	public void shouldOutputTextWithTabbedSpaces() {
 		ControlChars testClassText = new ControlChars();
 		String firstLine = "Peter Pan";
-		String expectedOutput = "\tPeter Pan";
+		//String expectedOutput = "\tPeter Pan";
 		//Assert.assertEquals(testClassText.printWithTabs(firstLine), expectedOutput);
 		String secondLine = "Mickey Mouse";
-		Assert.assertEquals(testClassText.printWithTabs(firstLine, secondLine), expectedOutput);
+		//Assert.assertEquals(expectedOutput, testClassText.printWithTabs(firstLine, secondLine));
+		String thirdLine = "Bugs Bunny";
+		String fourthLine = "Daffy Duck";
+		//String secondLineNumber = "1. ";
+		//String thirdLineNumber = "2. ";
+		//String fourthLineNumber = "3. ";
+		String expectedOutput = "\tPeter Pan\n\t\t1. Mickey Mouse\n\t\t2. Bugs Bunny\n\t\t3. Daffy Duck";
+		Assert.assertEquals(expectedOutput, testClassText.printWithTabs(firstLine, secondLine, thirdLine, fourthLine));
 	}
 }

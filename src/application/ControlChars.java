@@ -31,10 +31,13 @@ public class ControlChars {
 
 		String text5 = "\\To be or not to be.\n\\That is the question.";
 		System.out.println(text5);
+	
 	}
 	
-	public String printWithTabs(String input, String secondInput) {
-		return "\t" + input;
+	public String printWithTabs(String input, String secondInput, String thirdInput, String fourthInput) {
+		return "\t" + input + "\n\t\t1. " + secondInput + "\n\t\t2. " + thirdInput + "\n\t\t3. " + fourthInput;
 	}
+	
+	
 
 }
