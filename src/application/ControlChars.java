@@ -39,8 +39,12 @@ public class ControlChars {
 		int firstNumber = 1;
 		int secondNumber = 2;
 		int thirdNumber = 3;
-		System.out.println("\t" + firstLine + "\n\t\t" + firstNumber + ". " + secondLine + "\n\t\t" + secondNumber + ". " + thirdLine + "\n\t\t" + thirdNumber + ". " + fourthLine);
-	
+		//System.out.println("\t" + firstLine + "\n\t\t" + firstNumber + ". " + secondLine + "\n\t\t" + secondNumber + ". " + thirdLine + "\n\t\t" + thirdNumber + ". " + fourthLine);
+		String menu = "\t" + firstLine;
+		menu += "\n\t\t" + firstNumber + ". " + secondLine;
+		menu += "\n\t\t" + secondNumber + ". " + thirdLine;
+		menu += "\n\t\t" + thirdNumber + ". " + fourthLine;
+		System.out.println(menu);
 	}
 	
 	public String printWithTabs(String input, String secondInput, String thirdInput, String fourthInput) {
