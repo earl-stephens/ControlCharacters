@@ -32,5 +32,9 @@ public class ControlChars {
 		String text5 = "\\To be or not to be.\n\\That is the question.";
 		System.out.println(text5);
 	}
+	
+	public String printWithTabs(String input, String secondInput) {
+		return "\t" + input;
+	}
 
 }
