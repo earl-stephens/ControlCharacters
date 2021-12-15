@@ -31,6 +31,15 @@ public class ControlChars {
 
 		String text5 = "\\To be or not to be.\n\\That is the question.";
 		System.out.println(text5);
+		
+		String firstLine = "Select an option:";
+		String secondLine = "Add an entry";
+		String thirdLine = "View the database";
+		String fourthLine = "Exit";
+		int firstNumber = 1;
+		int secondNumber = 2;
+		int thirdNumber = 3;
+		System.out.println("\t" + firstLine + "\n\t\t" + firstNumber + ". " + secondLine + "\n\t\t" + secondNumber + ". " + thirdLine + "\n\t\t" + thirdNumber + ". " + fourthLine);
 	
 	}
 	
